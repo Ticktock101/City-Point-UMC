@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>CityPoint UMC</title>
+</head>
+<body>
+    <nav class="bg-white shadow-md p-8 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4 z-9">
+            <a href="#" class="flex items-center">
+                <img src="./images/Artboard1.png" alt="Logo" class="h-20">
+            </a>
+            
+            <button id="menu-btn" class="md:hidden block text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            
+            <div id="menu" class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="text-red-700 hover:text-gray-900 px-1">About</a>
+                <a href="#" class="text-red-700 hover:text-gray-900 px-1">Get Involved</a>
+                <div class="relative">
+                    <button id="desktop-dropdown-btn" class="flex items-center text-red-700 hover:text-gray-900">Ministries
+                        <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                    </button>
+                    <div id="desktop-dropdown" class="absolute hidden bg-white shadow-lg rounded-lg w-44 mt-2 divide-y divide-gray-100 z-9">
+                        <a href="#" class="block px-4 py-2 text-red-700 hover:bg-gray-100 px-1">Homeless</a>
+                        <a href="#" class="block px-4 py-2 text-red-700 hover:bg-gray-100 px-1">Music</a>
+                        <a href="#" class="block px-4 py-2 text-red-700 hover:bg-gray-100 px-1">Caring</a>
+                    </div>
+                </div>
+                <a href="#" class="text-red-700 hover:text-gray-900">Messages</a>
+                <a href="#" class="text-red-700 hover:text-gray-900">Calendar</a>
+                <a href="#" class="text-red-700 hover:text-gray-900">Give</a>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#" class="block text-gray-700 p-2">About</a>
+            <a href="#" class="block text-gray-700 p-2">Get Involved</a>
+            <div class="relative">
+                <button id="mobile-dropdown-btn" class="block w-full text-left text-gray-700 p-2">Ministries</button>
+                <div id="mobile-dropdown" class="hidden bg-white shadow-md rounded-md mt-1">
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Homeless</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Music</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Caring</a>
+                </div>
+            </div>
+            <a href="#" class="block text-gray-700 p-2">Messages</a>
+            <a href="#" class="block text-gray-700 p-2">Calendar</a>
+            <a href="#" class="block text-gray-700 p-2">Give</a>
+        </div>
+    </nav>
+
+    <body class=" text-center h-auto">
+        <div class=" relative aspect-[15/6] bg-cover bg-center text-white max-w-screen flex flex-col align-center justify-center z-5" style="background-image: url('./images/Church\ bg.jpg');">
+            <h1 class="text-6xl font-bold p-4 ">Welcome to City Point UMC</h1>
+            <p class="text-3xl p-4">A Place of Worship, Community, and Faith</p>
+            <div class="p-4 mt-10">
+                <a href="#" class=" mt-7 m-6 px-10 py-4 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-700 transition">Join Us Today</a>
+                <a href="#" class=" mt-7 m-6 px-10 py-4 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-700 transition">Watch Messages</a>
+            </div>
+            
+        </div>
+        <div class=" flex-col my-20 ">
+            <h2 class="text-2xl font-semibold my-10">Watch Recent Messages</h2>
+            <div class=" flex justify-around my-1">
+                <div class=" text-white p-20 px-30 bg-red-500 rounded-lg">
+                    <p>insert video</p>
+                </div>
+                <div class=" text-white p-20 px-30 bg-red-500 rounded-lg">
+                    <p>insert video</p>
+                </div>
+                <div class=" text-white p-20 px-30 bg-red-500 rounded-lg">
+                    <p>insert video</p>
+                </div>
+            </div>
+            <div class="my-20">
+                <a href="#" class="px-10 py-4 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-700 transition">View More Messages</a>
+            </div>
+            
+        </div>
+
+        <div class="flex h-3/4  justify-center items-center">
+            <div class="h-full flex-col w-1/2 justify-center align-center">
+                <h2 class="text-5xl my-10 font-semibold">Get Involved</h2>
+                <p class="text-2xl my-5">Join a small group, volunteer, or support our mission.</p>
+                <a href="#" class="inline-block mt-7 m-6 px-10 py-4 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-700 transition">Learn More</a>
+            </div>
+            <div class="w-1/2  h-full">
+                <img src="./images/CPWeb.jpg" alt="" class=" rounded-lg">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-12 text-center">
+            <h1 class="text-4xl font-bold text-black mb-8">Our Ministries</h1>
+            <div class="flex justify-around">
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 p-5">
+                    <img src="https://via.placeholder.com/250x150" alt="Youth Ministry" class="w-full rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-700 mt-4">Homeless Ministry</h3>
+                    <p class="text-gray-600 text-sm mt-2">Empowering the next generation through faith and fellowship.</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Learn More</a>
+                </div>
+                    <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 p-5">
+                    <img src="https://via.placeholder.com/250x150" alt="Worship Ministry" class="w-full rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-700 mt-4">Music Ministry</h3>
+                    <p class="text-gray-600 text-sm mt-2">Leading the church in praise and worship through music.</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Learn More</a>
+                </div>
+                    <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 p-5">
+                    <img src="https://via.placeholder.com/250x150" alt="Outreach Ministry" class="w-full rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-700 mt-4">Caring Ministry</h3>
+                    <p class="text-gray-600 text-sm mt-2">Serving the community and spreading God's love.</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Learn More</a>
+                </div>
+        </div>
+        
+        <div class="max-w-2xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg transform transition duration-500 hover:scale-105">
+            <h2 class="text-2xl font-semibold">Watch & Listen</h2>
+            <p class="mt-2">Stream live services or listen to past sermons.</p>
+            <a href="#" class="inline-block mt-4 px-6 py-2 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-700 transition">Watch Now</a>
+        </div>
+        
+    </body>
+    
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        document.getElementById('mobile-dropdown-btn').addEventListener('click', function () {
+            document.getElementById('mobile-dropdown').classList.toggle('hidden');
+        });
+        
+        document.getElementById('desktop-dropdown-btn').addEventListener('click', function () {
+            let dropdown = document.getElementById('desktop-dropdown');
+            dropdown.classList.toggle('hidden');
+        });
+    </script>
+    
+    
+</body>
+</html>
